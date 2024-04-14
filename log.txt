@@ -1,0 +1,16 @@
+下载并配置初始化mysql
+设置密码为123456
+默认用户为root
+
+初始化项目文件结构，添加spring-boot和mybatis-plus框架
+需要注意：
+springboot版本和使用的java、mysql/jdbc版本有关，需适配
+pom文件中的mysql-connector/jdbc高版本可以兼容低版本，比如8.0.23版本可以使用5.7.29版本的mysql数据库
+springboot版本和使用的mybatis-plus版本有关，需适配
+总之，需要注意版本适配
+
+使用Mybatis-plus需要创建application.properties来配置连接数据库的信息，一般都有规范
+
+配置IDEA数据库，初始化tp_music
+
+
