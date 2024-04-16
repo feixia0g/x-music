@@ -1,8 +1,10 @@
-package com.example.entity;
+package com.example.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import java.util.Date;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,18 +14,24 @@ import lombok.Setter;
  * </p>
  *
  * @author feixia0g
- * @since 2024-04-14 08:35:55
+ * @since 2024-04-14 08:37:38
  */
 @Getter
 @Setter
-public class Admin implements Serializable {
+public class Collect implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
       @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String name;
+    private Integer userId;
 
-    private String password;
+    private Byte type;
+
+    private Integer songId;
+
+    private Integer songListId;
+
+    private Date createTime;
 }

@@ -21,3 +21,9 @@ mybatis-plus-generator需要lombok和velocity依赖，并且要求版本适配
 添加Result类，作为controller类的统一返回对象，便于前端解析以及后端统一开发
 
 为各entity类添加对应request类，用于传输给前端，一般作为dto/vo数据传输层使用
+
+consumerController：
+实现新用户注册
+对新用户的密码进行加密
+
+

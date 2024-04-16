@@ -1,6 +1,6 @@
 package com.example.service.impl;
 
-import com.example.entity.Song;
+import com.example.model.entity.Song;
 import com.example.mapper.SongMapper;
 import com.example.service.SongService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

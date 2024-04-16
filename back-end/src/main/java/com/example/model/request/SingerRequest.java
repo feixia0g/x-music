@@ -1,8 +1,9 @@
-package com.example.request;
+package com.example.model.request;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
 @Data
 public class SingerRequest {
     private Integer id;
@@ -13,7 +14,7 @@ public class SingerRequest {
 
     private String pic;
 
-    private LocalDateTime birth;
+    private Date birth;
 
     private String location;
 

@@ -2,9 +2,9 @@ package com.example.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.common.Result;
-import com.example.entity.Admin;
+import com.example.model.entity.Admin;
 import com.example.mapper.AdminMapper;
-import com.example.request.AdminRequest;
+import com.example.model.request.AdminRequest;
 import com.example.service.AdminService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

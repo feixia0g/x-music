@@ -1,8 +1,9 @@
-package com.example.request;
+package com.example.model.request;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
 @Data
 public class CommentRequest {
     private Integer id;
@@ -15,7 +16,7 @@ public class CommentRequest {
 
     private String content;
 
-    private LocalDateTime createTime;
+    private Date createTime;
 
     private Byte type;
 

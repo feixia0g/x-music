@@ -1,9 +1,10 @@
-package com.example.entity;
+package com.example.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -32,7 +33,7 @@ public class Comment implements Serializable {
 
     private String content;
 
-    private LocalDateTime createTime;
+    private Date createTime;
 
     private Byte type;
 

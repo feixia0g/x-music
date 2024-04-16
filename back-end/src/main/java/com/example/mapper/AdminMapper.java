@@ -1,6 +1,6 @@
 package com.example.mapper;
 
-import com.example.entity.Admin;
+import com.example.model.entity.Admin;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

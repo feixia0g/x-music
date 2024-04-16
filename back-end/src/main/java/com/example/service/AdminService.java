@@ -1,9 +1,9 @@
 package com.example.service;
 
 import com.example.common.Result;
-import com.example.entity.Admin;
+import com.example.model.entity.Admin;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.example.request.AdminRequest;
+import com.example.model.request.AdminRequest;
 
 import javax.servlet.http.HttpSession;
 

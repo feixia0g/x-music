@@ -1,8 +1,9 @@
-package com.example.request;
+package com.example.model.request;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
+import java.util.Date;
+
 @Data
 public class SongRequest {
     private Integer id;
@@ -16,9 +17,9 @@ public class SongRequest {
     /**
      * 发行时间
      */
-    private LocalDateTime createTime;
+    private Date createTime;
 
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
     private String pic;
 

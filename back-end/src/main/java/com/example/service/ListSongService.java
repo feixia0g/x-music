@@ -1,6 +1,6 @@
 package com.example.service;
 
-import com.example.entity.ListSong;
+import com.example.model.entity.ListSong;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

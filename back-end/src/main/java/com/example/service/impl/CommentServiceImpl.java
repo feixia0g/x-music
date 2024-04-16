@@ -1,6 +1,6 @@
 package com.example.service.impl;
 
-import com.example.entity.Comment;
+import com.example.model.entity.Comment;
 import com.example.mapper.CommentMapper;
 import com.example.service.CommentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

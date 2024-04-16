@@ -1,6 +1,6 @@
 package com.example.mapper;
 
-import com.example.entity.Comment;
+import com.example.model.entity.Comment;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

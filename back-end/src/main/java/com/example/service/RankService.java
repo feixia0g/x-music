@@ -1,6 +1,6 @@
 package com.example.service;
 
-import com.example.entity.Rank;
+import com.example.model.entity.Rank;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

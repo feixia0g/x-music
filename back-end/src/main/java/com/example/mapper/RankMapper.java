@@ -1,6 +1,6 @@
 package com.example.mapper;
 
-import com.example.entity.Rank;
+import com.example.model.entity.Rank;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

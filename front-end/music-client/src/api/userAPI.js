@@ -9,7 +9,7 @@ export default {
    * @param {String} password
    * @return: {Promise}
    */
-  loginIn (username, password) {
+  loginIn(username, password) {
     let params = new URLSearchParams()
     params.append('username', username)
     params.append('password', password)
@@ -28,7 +28,9 @@ export default {
    * @param {String} location
    * @return: {Promise}
    */
-  loginUp (username, password, sex, phoneNum, email, datetime, introduction, location, avator) {
+  loginUp(username, password, sex, phoneNum, email, datetime, introduction, location, avator) {
+    const data = {};
+
     var params = new URLSearchParams()
     params.append('username', username)
     params.append('password', password)
@@ -39,7 +41,20 @@ export default {
     params.append('introduction', introduction)
     params.append('location', location)
     params.append('avator', avator)
-    return axios.post(`${host}/user/add`, params)
+
+    // 遍历所有参数的键值对，将其添加到JavaScript对象中
+    for (const [key, value] of params.entries()) {
+      data[key] = value;
+    }
+
+    // 将JavaScript对象转换为JSON字符串
+    const jsonData = JSON.stringify(data);
+
+    return axios.post(`${host}/user/add`, jsonData, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
   },
 
   /**
@@ -47,7 +62,7 @@ export default {
    * @param {Number} userId
    * @return: {Promise}
    */
-  updateUserMsg (userId, username, password, sex, phoneNum, email, datetime, introduction, location) {
+  updateUserMsg(userId, username, password, sex, phoneNum, email, datetime, introduction, location) {
     var params = new URLSearchParams()
     params.append('id', userId)
     params.append('username', username)
@@ -66,7 +81,7 @@ export default {
    * @param {Number} id
    * @return: {Promise}
    */
-  getUserOfId (id) {
+  getUserOfId(id) {
     return axios.get(`${host}/user/detail?id=${id}`)
   }
 }

@@ -1,6 +1,6 @@
 package com.example.service.impl;
 
-import com.example.entity.Rank;
+import com.example.model.entity.Rank;
 import com.example.mapper.RankMapper;
 import com.example.service.RankService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

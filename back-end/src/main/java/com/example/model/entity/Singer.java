@@ -1,9 +1,10 @@
-package com.example.entity;
+package com.example.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,36 +14,26 @@ import lombok.Setter;
  * </p>
  *
  * @author feixia0g
- * @since 2024-04-14 08:38:18
+ * @since 2024-04-14 08:39:38
  */
 @Getter
 @Setter
-public class Consumer implements Serializable {
+public class Singer implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
       @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String username;
-
-    private String password;
+    private String name;
 
     private Byte sex;
 
-    private String phoneNum;
+    private String pic;
 
-    private String email;
-
-    private LocalDateTime birth;
-
-    private String introduction;
+    private Date birth;
 
     private String location;
 
-    private String avator;
-
-    private LocalDateTime createTime;
-
-    private LocalDateTime updateTime;
+    private String introduction;
 }

@@ -1,6 +1,6 @@
 package com.example.service.impl;
 
-import com.example.entity.Collect;
+import com.example.model.entity.Collect;
 import com.example.mapper.CollectMapper;
 import com.example.service.CollectService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
